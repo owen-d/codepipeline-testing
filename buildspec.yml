@@ -1,0 +1,32 @@
+version: 0.2
+
+env:
+  variables:
+    EXIT_CODE: 0
+  # parameter-store:
+  #   key: "value"
+  #   key: "value"
+            
+phases:
+  install:
+    commands:
+      - echo "installing -- stub"
+  pre_build:
+    commands:
+      - echo "pre_build -- stub"
+  build:
+    commands:
+      - echo "building"
+      - exit $EXIT_CODE
+  post_build:
+    commands:
+      - echo "post_build -- stub"
+# artifacts:
+#   files:
+#     - location
+#     - location
+#   discard-paths: yes
+#   base-directory: location
+# cache:
+#   paths:
+#     - '/root/.m2/**/*'
