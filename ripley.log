@@ -1,0 +1,54 @@
+MainProcess 2017-11-30 13:24:46,446 - ripley.main - INFO - Account:   379113766245 (aws)
+MainProcess 2017-11-30 13:24:46,447 - ripley.main - INFO - Regions:   ap-northeast-1, ap-northeast-2, ap-south-1, ap-southeast-1, ap-southeast-2, ca-central-1, eu-central-1, eu-west-1, eu-west-2, sa-east-1, us-east-1, us-east-2, us-west-1, us-west-2
+MainProcess 2017-11-30 13:24:46,447 - ripley.main - INFO - Services:  autoscaling, cloudformation, cloudfront, cloudwatch, dynamodb, ec2, elasticache, elb, iam, lambda, logs, rds, s3, sns, sqs
+MainProcess 2017-11-30 13:24:46,447 - ripley.main - INFO - Whitelist: /usr/local/lib/python3.6/site-packages/ripley/default_whitelist.yaml
+MainProcess 2017-11-30 13:24:47,320 - ripley.main - INFO - Starting to ripley regional services
+MainProcess 2017-11-30 13:25:10,894 - ripley.main - INFO - Starting to ripley global services
+MainProcess 2017-11-30 13:25:11,087 - ripley.nukem - INFO - Finished global services
+
+****** tmplog-ca-central-1.log ******
+ca-central-1 2017-11-30 13:25:05,183 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-eu-west-2.log ******
+eu-west-2 2017-11-30 13:25:06,992 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-us-east-2.log ******
+us-east-2 2017-11-30 13:25:05,442 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-ap-northeast-1.log ******
+ap-northeast-1 2017-11-30 13:25:08,739 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-eu-west-1.log ******
+eu-west-1 2017-11-30 13:25:07,047 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-us-east-1.log ******
+us-east-1 2017-11-30 13:24:49,702 - ripley.aws.logs.delete_log_group - INFO - Deleting cloudwatch log group: {'logGroupName': '/aws/codebuild/gh-codepipeline-codebuild-proj'}
+us-east-1 2017-11-30 13:24:49,730 - ripley.aws.logs.delete_log_group - INFO - Deleting cloudwatch log group: {'logGroupName': '/aws/codebuild/personal-codebuild-gh'}
+us-east-1 2017-11-30 13:24:49,762 - ripley.aws.logs.delete_log_group - INFO - Deleting cloudwatch log group: {'logGroupName': '/aws/lambda/codepipeline-sample-CreateSSHKeyLambda-ORKZ317PFGKH'}
+us-east-1 2017-11-30 13:24:49,795 - ripley.aws.logs.delete_log_group - INFO - Deleting cloudwatch log group: {'logGroupName': '/aws/lambda/codepipeline-sample-DeleteBucketContentsLambda-1I77T8NI8IO1M'}
+us-east-1 2017-11-30 13:24:49,825 - ripley.aws.logs.delete_log_group - INFO - Deleting cloudwatch log group: {'logGroupName': '/aws/lambda/codepipeline-sample-GitPullLambda-CJKONI7BE4SS'}
+us-east-1 2017-11-30 13:25:05,246 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-ap-northeast-2.log ******
+ap-northeast-2 2017-11-30 13:25:10,883 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-ap-southeast-1.log ******
+ap-southeast-1 2017-11-30 13:25:10,055 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-ap-south-1.log ******
+ap-south-1 2017-11-30 13:25:10,052 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-ap-southeast-2.log ******
+ap-southeast-2 2017-11-30 13:25:10,271 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-us-west-2.log ******
+us-west-2 2017-11-30 13:25:06,922 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-us-west-1.log ******
+us-west-1 2017-11-30 13:25:07,162 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-sa-east-1.log ******
+sa-east-1 2017-11-30 13:25:08,381 - ripley.nukem - INFO - Finished region services
+
+****** tmplog-eu-central-1.log ******
+eu-central-1 2017-11-30 13:25:07,991 - ripley.nukem - INFO - Finished region services
