@@ -16,8 +16,8 @@ phases:
       - echo "pre_build -- stub"
   build:
     commands:
-      - echo "building"
-      - echo "src version: $CODEBUILD_SOURCE_VERSION"
+      - echo building
+      - echo "src version -- $CODEBUILD_SOURCE_VERSION"
       - exit $EXIT_CODE
   post_build:
     commands:
