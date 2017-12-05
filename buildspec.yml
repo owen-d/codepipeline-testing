@@ -18,6 +18,7 @@ phases:
     commands:
       - echo building
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
+      - ./build.sh
       - exit $EXIT_CODE
   post_build:
     commands:
