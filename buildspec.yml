@@ -15,12 +15,12 @@ phases:
       - echo testing env
       - env
       - echo "building docker image"
-      - docker build -t $REPO:build .
+      - docker build -t $REPO .
   build:
     commands:
       - echo building
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
-      - docker run --rm $REPO:$CODEBUILD_SOURCE_VERSION
+      - docker run --rm $REPO
   post_build:
     commands:
       - echo "post_build -- stub"
