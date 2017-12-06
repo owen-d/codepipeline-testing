@@ -3,6 +3,7 @@ version: 0.2
 env:
   variables:
     EXIT_CODE: 0
+    CREDSTASH_KEY: test-key
   # parameter-store:
   #   key: "value"
   #   key: "value"
@@ -19,6 +20,8 @@ phases:
       - echo building
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
       - ./build.sh
+      - pip install -r requirements.txt
+      - python test.py
       - exit $EXIT_CODE
   post_build:
     commands:
