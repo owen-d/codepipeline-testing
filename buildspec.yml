@@ -12,8 +12,10 @@ phases:
       - echo "installing -- stub"
   pre_build:
     commands:
+      - echo testing env
+      - env
       - echo "building docker image"
-      - docker build -t $REPO:$CODEBUILD_SOURCE_VERSION .
+      - docker build -t $REPO:build .
   build:
     commands:
       - echo building
