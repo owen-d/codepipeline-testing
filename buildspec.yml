@@ -20,7 +20,7 @@ phases:
     commands:
       - echo building
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
-      - docker run --rm -it $REPO:$CODEBUILD_SOURCE_VERSION
+      - docker run --rm $REPO:$CODEBUILD_SOURCE_VERSION
   post_build:
     commands:
       - echo "post_build -- stub"
