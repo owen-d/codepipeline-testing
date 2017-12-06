@@ -3,26 +3,24 @@ version: 0.2
 env:
   variables:
     EXIT_CODE: 0
+    REPO: codepipeline-testing
     CREDSTASH_KEY: test-key
-  # parameter-store:
-  #   key: "value"
-  #   key: "value"
-            
+
 phases:
   install:
     commands:
       - echo "installing -- stub"
   pre_build:
     commands:
-      - echo "pre_build -- stub"
+      - echo testing env
+      - env
+      - echo "building docker image"
+      - docker build -t $REPO .
   build:
     commands:
       - echo building
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
-      - ./build.sh
-      - pip install -r requirements.txt
-      - python test.py
-      - exit $EXIT_CODE
+      - docker run --rm $REPO /bin/bash -c "echo hello world"
   post_build:
     commands:
       - echo "post_build -- stub"
