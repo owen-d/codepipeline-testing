@@ -25,8 +25,8 @@ phases:
       - ls
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
       - |
-        docker run --rm $IMAGE /bin/bash -c "\
-        echo first line \
+        docker run --rm $IMAGE /bin/bash -c "
+        echo first line
         echo second line"
   post_build:
     commands:
