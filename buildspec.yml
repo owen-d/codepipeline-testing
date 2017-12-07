@@ -24,7 +24,10 @@ phases:
       - pwd
       - ls
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
-      - docker run --rm $IMAGE /bin/bash -c "git status && git remote -v && git branch"
+      - |
+        docker run --rm $IMAGE /bin/bash -c "\
+        echo first line \
+        echo second line"
   post_build:
     commands:
       - echo "post_build -- stub"
