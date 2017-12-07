@@ -14,7 +14,7 @@ phases:
       - export IMAGE=$REPO:$DOCKERFILE_HASH
       # can attempt to fetch docker image here, otherwise build
       - echo "building docker image $IMAGE"
-      - docker build -f Dockerfile.codebuild -t $IMAGE .
+      - docker build -t $IMAGE .
   pre_build:
     commands:
       - cd $CODEBUILD_SRC_DIR
