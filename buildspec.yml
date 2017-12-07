@@ -9,18 +9,20 @@ env:
 phases:
   install:
     commands:
-      - echo "installing -- stub"
+      - echo "bootstrapping env..."
+      - export DOCKERFILE_HASH=$(md5sum Dockerfile | awk '{print $1}')
+      - export IMAGE=$REPO:$DOCKERFILE_HASH
+      # can attempt to fetch docker image here, otherwise build
+      - echo "building docker image"
+      - docker build -f Dockerfile.codebuild -t $IMAGE .
   pre_build:
     commands:
-      - echo testing env
-      - env
-      - echo "building docker image"
-      - docker build -t $REPO .
+      - cd $CODEBUILD_SRC_DIR
   build:
     commands:
       - echo building
       - echo "src version -- $CODEBUILD_SOURCE_VERSION"
-      - docker run --rm $REPO /bin/bash -c "echo hello world"
+      - docker run --rm $IMAGE /bin/bash -c "git status && git remote -v && git branch"
   post_build:
     commands:
       - echo "post_build -- stub"
