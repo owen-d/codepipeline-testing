@@ -13,7 +13,7 @@ phases:
       - export DOCKERFILE_HASH=$(md5sum Dockerfile | awk '{print $1}')
       - export IMAGE=$REPO:$DOCKERFILE_HASH
       # can attempt to fetch docker image here, otherwise build
-      - echo "building docker image"
+      - echo "building docker image $IMAGE"
       - docker build -f Dockerfile.codebuild -t $IMAGE .
   pre_build:
     commands:
