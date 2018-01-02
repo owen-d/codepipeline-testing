@@ -1,5 +1,6 @@
 #!/bin/bash
 
+env
 if [[ -a build-failer ]]
   then
     echo "found build-failer, failing build."
